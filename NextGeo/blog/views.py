@@ -268,6 +268,7 @@ def add_blog(request):
 def update_blog(request, slug):
     blog = get_object_or_404(Blog, slug=slug)
     form = AddBlogForm(instance=blog)
+    categories = Category.objects.all()
 
     if request.method == "POST":
         form = AddBlogForm(request.POST, request.FILES, instance=blog)
@@ -285,6 +286,8 @@ def update_blog(request, slug):
             blog.category = category
             blog.save()
 
+            # Clear existing tags and add new ones
+            blog.tags.clear()
             for tag in tags:
                 tag_input = Tag.objects.filter(
                     title__iexact=tag.strip(),
@@ -293,7 +296,6 @@ def update_blog(request, slug):
                 if tag_input.exists():
                     t = tag_input.first()
                     blog.tags.add(t)
-
                 else:
                     if tag != '':
                         new_tag = Tag.objects.create(
@@ -307,10 +309,11 @@ def update_blog(request, slug):
         else:
             print(form.errors)
 
-
     context = {
         "form": form,
-        "blog": blog
+        "blog": blog,
+        "categories": categories,
     }
     return render(request, 'update_blog.html', context)
+
     # end of views file

@@ -17,13 +17,15 @@
                         <p class="text-danger py-1">{{form.title.errors}}</p>
                     </div>
                     <div class="form-group">
-                        <label for="title">Blog Category</label>
+                        <label for="category">Blog Category</label>
                         <select class="form-control" name="category" id="category_id">
-                        {% for category in categories %}
-                            <option value="{{category.id}}">{{category.title}}</option>
-                        {% endfor %}
-                        <p class="text-danger py-1">{{form.category.errors}}</p>
+                            {% for category in categories %}
+                                <option value="{{ category.id }}" {% if form.instance.category.pk == category.pk %}selected{% endif %}>{{ category.title }}</option>
+                            {% endfor %}
                         </select>
+                        {% if form.category.errors %}
+                            <p class="text-danger py-1">{{ form.category.errors }}</p>
+                        {% endif %}
                     </div>
                     <div class="form-group">
                         <label for="title">Description</label>
@@ -37,7 +39,8 @@
                     </div>
                     <div class="form-group">
                         <label for="title">Tags</label>
-                        <textarea class="form-control" name="tags" id="" cols="30" rows="10" placeholder="enter comma seprrated values"></textarea>
+                        <textarea class="form-control" name="tags" id="" cols="30" rows="10" 
+                        placeholder="enter comma seprrated values"></textarea>
                         <p class="text-danger py-1">{{form.tags.errors}}</p> 
                     </div>
                     <div class="form-group my-2">

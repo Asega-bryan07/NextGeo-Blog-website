@@ -52,9 +52,9 @@
                             {% else %}
                             <li class="pl-3 pr-3"><a href="javascript:void(0);"><i id="like-icon" data-blog="{{blog.id}}" class="fa fa-heart empty-heart"></i></a></li>
                             {% endif %}
-                            <li><i class="fa fa-share-alt"></i></li>
-                            <li><a href="#">Facebook</a>,</li>
-                            <li><a href="#"> Twitter</a></li>
+                            <li>Share <i class="fa fa-share-alt"> </i></li>
+                            <li><a href="https://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
                           </ul>
                         </div>
                         {% else %}
@@ -66,9 +66,9 @@
                             {% else %}
                             <li class="pl-3 pr-3"><a href="{% url 'login' %}"><i class="fa fa-heart empty-heart"></i></a></li>
                             {% endif %}
-                            <li><i class="fa fa-share-alt"></i></li>
-                            <li><a href="#">Facebook</a>,</li>
-                            <li><a href="#"> Twitter</a></li>
+                            <li>Share <i class="fa fa-share-alt"> </i></li>
+                            <li><a href="https://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
                           </ul>
                         </div>
                         {% endif %}
@@ -168,7 +168,7 @@
               <div class="col-lg-12">
                 <div class="sidebar-item search">
                   <form id="search_form" name="gs" method="GET" action="#">
-                    <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    <input type="text" name="q" class="searchText" placeholder="search" autocomplete="on">
                   </form>
                 </div>
               </div>
