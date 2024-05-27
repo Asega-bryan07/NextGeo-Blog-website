@@ -1,6 +1,6 @@
 # NextGeo-Blog-website
 ![NextGeo Home](./NextGeo/media/snip/home_page.jpg "NextGeo Home")
-## Backend Project deploying the following Technologies:<br> Django Framework, Docker Containerization, TypeScript, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
+## Backend Project:<br> Django Framework, Docker Containerization, TypeScript, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
 <br>
 
 ![Menu](./NextGeo/media/snip/menu.jpg "menu")
@@ -131,7 +131,7 @@ NextGeo-Blog-website/
 ```
 <br>
 
-![Login](./NextGeo/media/snip/login_page.jpg "Login")
+![Login](./NextGeo/media/snip/login.jpg "Login")
 
 # FRONTEND PAGES
 The frontend page description is as follows:
