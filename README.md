@@ -1,6 +1,7 @@
 # NextGeo-Blog-website
 ![NextGeo Home](./NextGeo/media/snip/home_page.jpg "NextGeo Home")
-## Backend Project:<br> Django Framework, Docker Containerization, TypeScript, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
+## Backend Project:<br> Django Framework, Docker Containerization, JavaScript; JQuery, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
+Access the blog-website online via the link: []
 <br>
 
 ![Menu](./NextGeo/media/snip/menu.jpg "menu")
@@ -10,7 +11,7 @@
 
  The NextGeo application serves as the core of the project, containing essential configurations and settings. The blog application handles all blog-related functionalities, including creating new posts, editing existing ones, and deleting posts. Sign up and Sign in has been performed and the passwords are securely ```SALTED```. 
 
- To enhance the user experience, static assets implemented include TypeScript, Tailwind-CSS, Bootstrap, Bootswatch, and FontAwesome and images are organized under the assets directory, with configurations managed by tools like Tailwind CSS.
+ To enhance the user experience, static assets implemented include JavaScript; JQuery, Tailwind-CSS, Bootstrap, Bootswatch, and FontAwesome and images are organized under the assets directory, with configurations managed by tools like Tailwind CSS.
 
  This BlogWebsite has been hosted online with a connection to a ```CI/CD pipeline: Jenkins```, where there is a continous integration and continous deployment of the site from time to time without stopping users from their daily routine on the site.
 
@@ -21,7 +22,9 @@
 
 # Steps to Run this Project
 
-1. ```git clone https://github.com/Asega-bryan07/NextGeo-Blog-website.git && cd NextGeo-Blog-website```
+1. ``` git clone https://github.com/Asega-bryan07/NextGeo-Blog-website.git```<br>
+```cd NextGeo-Blog-website```
+
 <br>
 
 ## Create Virtual Environment using pipenv
@@ -47,7 +50,7 @@ enter the prompted details to become a superuser
 Follow the instructions on the official Docker website to install Docker on your system.
 
 8. From the previous installation, we will now be using docker to perform migrations and running the server
-```docker-compose up --build```
+```docker-compose up --build``` <br>
 Note: Ensure the docker file in the root of this directory is available
 
 Modify the website (if need be) to add your own implementation
@@ -154,7 +157,7 @@ The frontend page description is as follows:
     post-details.html  -- Displays details for a logged-in author on the previous blogs they posted.
     profile.html       -- Logged-in User profile page.
     registration.html  -- Registration form for new users.
-    scripts.html       -- Template to include common Script files and inline typescript.
+    scripts.html       -- Template to include common Script files and inline JavaScript.
     search.html        -- Search results for a blog on a page.
     sidebar.html       -- Reusable sidebar section for different pages.
     tag_blogs.html     -- Page showing blogs filtered by a specific tag.
