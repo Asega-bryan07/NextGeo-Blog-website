@@ -1,6 +1,6 @@
 # NextGeo-Blog-website
 ![NextGeo Home](./NextGeo/media/snip/home_page.jpg "NextGeo Home")
-## Backend Project:<br> Django Framework, Docker Containerization, JavaScript; JQuery, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
+## FullStack Project:<br> Django Framework, Docker Containerization, JavaScript; JQuery, Tailwind-CSS, Bootstrap, MySQL Database, and Jenkins for CI/CD.
 Access the blog-website online via the link: []
 <br>
 
